@@ -57,7 +57,7 @@ export default defineComponent({
   position: relative;
   overflow: hidden;
 }
-.avatar >>> img {
+.avatar::v-deep(img) {
   position: absolute;
   width: 100%;
   height: 100%;
