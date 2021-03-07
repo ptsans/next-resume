@@ -99,6 +99,7 @@ export default defineComponent({
   grid-area: 1 / 1 / 2 / 3;
   display: grid;
   grid-template-columns: 12fr 8fr;
+  gap: 1rem;
 }
 .content__title, .content__subtitle {
   margin: 0;
