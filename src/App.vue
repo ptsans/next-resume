@@ -1,14 +1,18 @@
 <template>
-  <v-paper />
+a  <v-paper :header="header" />
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import VPaper from './components/Paper'
+import { defineComponent, reactive } from 'vue'
+import VPaper from '@/components/Paper'
+import { THeader } from "@/components/Paper/VPaper.vue";
+import HeaderJson from '@/api/header.json'
 
 export default defineComponent({
   name: 'App',
   setup() {
+    const header = reactive<THeader>(HeaderJson)
+    return { header }
   },
   components: {
     VPaper
