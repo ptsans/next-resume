@@ -17,9 +17,17 @@ export default defineComponent({
 </script>
 
 <style>
+:root {
+  --primary-main: #000;
+  --primary-text: #000;
+  --secondary-main: rgba(0, 0, 0, .12);
+  --secondary-text: #a5a5a5;
+  --body: #e9ecef
+}
+
 body {
   margin: 0;
-  background: #e9ecef;
+  background: var(--body);
   font-size: 16px;
 }
 
