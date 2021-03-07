@@ -1,5 +1,11 @@
 {
   "full_name": "Елизов Вадим Эдуардрович",
   "job_position": "Junior Backend Developer",
-  "avatar": "3.png"
+  "avatar": "3.png",
+  "location": "Владивосток",
+  "born_date": {
+    "year": 2000,
+    "month": 7,
+    "day": 28
+  }
 }
