@@ -1,5 +1,5 @@
 <template>
-a  <v-paper :header="header" />
+  <v-paper :header="header" />
 </template>
 
 <script lang="ts">
