@@ -2,6 +2,7 @@
   <main class="paper">
     <v-header />
     <v-content />
+    <v-sidebar />
   </main>
 </template>
 
@@ -9,12 +10,14 @@
 import { defineComponent } from 'vue'
 import VHeader from './VHeader.vue'
 import VContent from './VContent.vue'
+import VSidebar from './VSidebar.vue'
 
 export default defineComponent({
   name: 'VPaper',
   components: {
     VHeader,
-    VContent
+    VContent,
+    VSidebar
   }
 })
 </script>
@@ -28,8 +31,9 @@ export default defineComponent({
   box-sizing: border-box;
   display: grid;
   grid-template-rows: auto 12fr;
-  grid-template-columns: 12fr 8fr;
+  grid-template-columns: 13fr 8fr;
   border-radius: 5px;
-  gap: 1rem;
+  row-gap: 1rem;
+  column-gap: 4rem;
 }
 </style>
