@@ -113,10 +113,13 @@ export default defineComponent({
   border-radius: 50%;
   position: relative;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .avatar::v-deep(img) {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 </style>
