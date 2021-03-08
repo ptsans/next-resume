@@ -8,12 +8,14 @@
         {{ header.job_position }}
       </h2>
       <div class="content__tags">
-        <v-location-chip>
+        <v-chip>
+          <v-pin-icon />
           {{ header.location }}
-        </v-location-chip>
-        <v-age-chip>
+        </v-chip>
+        <v-chip>
+          <v-person-icon />
           {{ age }}
-        </v-age-chip>
+        </v-chip>
       </div>
     </div>
     <div class="avatar">
@@ -24,8 +26,9 @@
 
 <script lang="ts">
 import { defineComponent, reactive, ref, computed } from 'vue'
-import VLocationChip from './VLocationChip.vue'
-import VAgeChip from './VAgeChip.vue'
+import VChip from './VChip.vue'
+import VPinIcon from '@/components/Icons/VPinIcon.vue'
+import VPersonIcon from '@/components/Icons/VPersonIcon.vue'
 import HeaderJson from '@/api/header.json'
 import { formatAge } from '@/utils/formatAge'
 
@@ -46,8 +49,9 @@ type THeader = {
 export default defineComponent({
   name: 'VHeader',
   components: {
-    VLocationChip,
-    VAgeChip
+    VChip,
+    VPinIcon,
+    VPersonIcon
   },
   setup() {
     const header = reactive<THeader>(HeaderJson)
@@ -80,8 +84,8 @@ export default defineComponent({
 .header {
   grid-area: 1 / 1 / 2 / 3;
   display: grid;
-  grid-template-columns: 12fr 8fr;
-  gap: 1rem;
+  grid-template-columns: 13fr 8fr;
+  gap: 4rem;
 }
 .content__title, .content__subtitle {
   margin: 0;
