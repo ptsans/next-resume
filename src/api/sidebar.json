@@ -1,0 +1,38 @@
+{
+  "contacts": [
+    {
+      "icon": "v-email-icon",
+      "label": "kzone416@gmail.com",
+      "href": "mailto:kzone416@gmail.com"
+    },
+    {
+      "icon": "v-telegram-icon",
+      "label": "@ptsans",
+      "href": "https://t.me/ptsans"
+    },
+    {
+      "icon": "v-github-icon",
+      "label": "ptsans",
+      "href": "https://github.com/ptsans"
+    }
+  ],
+  "job_time": "Полная занятость, удалённая работа.\nПереезд возможен.",
+  "skills": [
+    "Node.js",
+    "Typescript",
+    "Vue",
+    "React",
+    "Golang",
+    "Api интерфейсы",
+    "PostgreSQL",
+    "Redis",
+    "Docker",
+    "Pixi.js"
+  ],
+  "languages": [
+    {
+      "title": "English",
+      "level": "B1"
+    }
+  ]
+}
