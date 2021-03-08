@@ -1,27 +1,40 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <v-paper />
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
+import { defineComponent } from 'vue'
+import VPaper from '@/components/Paper'
 
 export default defineComponent({
   name: 'App',
   components: {
-    HelloWorld
+    VPaper
   }
-});
+})
 </script>
 
 <style>
+:root {
+  --primary-main: #000;
+  --primary-text: #000;
+  --secondary-main: rgba(0, 0, 0, .12);
+  --secondary-text: #747474;
+  --body: #e9ecef
+}
+
+body {
+  margin: 0;
+  background: var(--body);
+  font-size: 16px;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  display: grid;
+  justify-content: center;
+  padding: 2rem 0;
 }
 </style>
