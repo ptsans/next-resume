@@ -6,7 +6,9 @@
         class="list__item"
     >
       <h4 class="list__title">
-        {{ item.title }}
+        <a :class="{['list__title_link']: item.href}" :href="item.href || null">
+          {{ item.title }}
+        </a>
       </h4>
       <p
           v-for="text in item.body"
@@ -24,6 +26,7 @@ import { defineComponent, PropType, toRefs} from 'vue'
 
 export type TListItem = {
   title: string
+  href?: string
   body: string[]
 }
 
@@ -74,6 +77,13 @@ export default defineComponent({
 .list__title {
   margin: 0 0 0.7rem 0;
   font-size: 1rem;
+}
+.list__title_link {
+  color: var(--primary-text);
+  text-decoration: none;
+}
+.list__title_link:hover {
+  text-decoration: underline;
 }
 .list__text {
   color: var(--secondary-text);
