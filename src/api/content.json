@@ -13,6 +13,7 @@
   "projects": [
     {
       "title": "Small beauty salon",
+      "href": "",
       "body": [
         "Frontend: React, Next",
         "Backend: Directus (Headless CMS)"
@@ -20,6 +21,7 @@
     },
     {
       "title": "Pixel coloring game",
+      "href": "",
       "body": [
         "Frontend: React, Next, Pixi.js",
         "Backend: Node.js, Typescript, Go"
