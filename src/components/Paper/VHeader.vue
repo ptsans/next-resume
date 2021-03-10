@@ -122,4 +122,22 @@ export default defineComponent({
   max-width: 100%;
   max-height: 100%;
 }
+@media not print {
+  @media only screen
+  and (max-width: 425px) {
+    .header {
+      grid-area: auto;
+      grid-template-columns: none;
+      grid-template-rows: max-content;
+      gap: 2rem;
+    }
+    .content__subtitle {
+      line-height: 1;
+      padding: 0.5rem 0;
+    }
+    .avatar {
+      grid-row-start: 1;
+    }
+  }
+}
 </style>

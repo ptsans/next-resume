@@ -26,10 +26,13 @@ export default defineComponent({
   --body: #e9ecef;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
   margin: 0;
   background: var(--body);
-  font-size: 16px;
 }
 
 #app {
@@ -53,6 +56,14 @@ body {
   #app {
     padding: 0;
     -webkit-print-color-adjust: exact;
+  }
+}
+@media not print {
+  @media only screen
+  and (max-width: 425px) {
+    #app {
+      padding-top: 0;
+    }
   }
 }
 </style>

@@ -49,4 +49,12 @@ export default defineComponent({
     display: none;
   }
 }
+@media not print {
+  @media only screen
+  and (max-width: 425px) {
+    .footer {
+      grid-auto-flow: row;
+    }
+  }
+}
 </style>

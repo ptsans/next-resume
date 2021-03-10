@@ -46,4 +46,27 @@ export default defineComponent({
     --paper-padding: 0;
   }
 }
+@media not print {
+  @media only screen
+  and (max-width: 768px) {
+    .paper {
+      border-radius: 0;
+    }
+    .paper__inner {
+      width: 100%;
+    }
+  }
+  @media only screen
+  and (max-width: 425px) {
+    .paper {
+      padding: 2rem;
+    }
+    .paper__inner {
+      width: 100%;
+      grid-template-rows: none;
+      grid-template-columns: 1fr;
+      row-gap: 0;
+    }
+  }
+}
 </style>
