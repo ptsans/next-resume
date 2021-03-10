@@ -41,4 +41,9 @@ export default defineComponent({
   row-gap: 1rem;
   column-gap: 4rem;
 }
+@media print {
+  .paper {
+    --paper-padding: 0;
+  }
+}
 </style>

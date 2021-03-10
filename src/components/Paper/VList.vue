@@ -91,4 +91,9 @@ export default defineComponent({
   margin: 0;
   line-height: 1.5;
 }
+@media print {
+  .list__item {
+    page-break-inside: avoid;
+  }
+}
 </style>

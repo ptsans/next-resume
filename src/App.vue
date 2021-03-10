@@ -37,4 +37,18 @@ body {
   justify-content: center;
   padding: 2rem 0;
 }
+
+@media print {
+  @page {
+    size: A4;
+    margin: 10mm;
+  }
+  body {
+    background: #fff;
+  }
+  #app {
+    padding: 0;
+    -webkit-print-color-adjust: exact;
+  }
+}
 </style>
