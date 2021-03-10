@@ -46,7 +46,6 @@ export default defineComponent({
 </script>
 
 <style scoped>
-
 .list {
   list-style: none;
   margin: 1rem 0;
