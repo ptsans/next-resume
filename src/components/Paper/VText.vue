@@ -15,7 +15,7 @@ export default defineComponent({
 
 <style scoped>
 .text {
-  margin: 1rem 0;
+  margin: 0.8rem 0;
   font-size: 1rem;
   white-space: pre-line;
   display: flex;
