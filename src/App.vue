@@ -25,16 +25,13 @@ export default defineComponent({
   --secondary-text: #747474;
   --body: #e9ecef;
 }
-
 html {
   font-size: 16px;
 }
-
 body {
   margin: 0;
   background: var(--body);
 }
-
 #app {
   font-family: 'Montserrat', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -44,7 +41,6 @@ body {
   padding: 2rem 0;
   row-gap: 2rem;
 }
-
 @media print {
   @page {
     size: A4;
