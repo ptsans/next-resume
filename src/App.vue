@@ -1,14 +1,17 @@
 <template>
   <v-paper />
+  <v-footer />
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
 import VPaper from '@/components/Paper'
+import VFooter from '@/components/Shared/VFooter.vue'
 
 export default defineComponent({
   name: 'App',
   components: {
+    VFooter,
     VPaper
   }
 })
@@ -36,6 +39,7 @@ body {
   display: grid;
   justify-content: center;
   padding: 2rem 0;
+  row-gap: 2rem;
 }
 
 @media print {
