@@ -20,7 +20,7 @@ export default defineComponent({
   --primary-text: #000;
   --secondary-main: rgba(0, 0, 0, .12);
   --secondary-text: #747474;
-  --body: #e9ecef
+  --body: #e9ecef;
 }
 
 body {
