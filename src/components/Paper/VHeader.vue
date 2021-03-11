@@ -108,8 +108,8 @@ export default defineComponent({
 .avatar {
   place-self: center;
   background: var(--secondary-main);
-  width: 100px;
-  height: 100px;
+  width: 135px;
+  height: 135px;
   border-radius: 50%;
   position: relative;
   overflow: hidden;
