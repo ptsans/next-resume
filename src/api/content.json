@@ -13,7 +13,7 @@
   "projects": [
     {
       "title": "Small beauty salon",
-      "href": "",
+      "href": "https://likebotox.com",
       "body": [
         "Frontend: React, Next",
         "Backend: Directus (Headless CMS)"
